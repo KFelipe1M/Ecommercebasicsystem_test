@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho de Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <header> 
+    <div class="logo"> 
+       <img src="unnamed.jpg" alt="logo"> <!-- logo -->   
+       <h1>Hamburgueria do zé </h1>
+    </div>
+        <nav>
+         <h5> <a href="#">Cardápio</a></h5>
+         <h5> <a href="#">Locais</a></h5>
+         <h5> <a href="#">Sobre nós</a></h5>
+         <h3>Pedido total: R$ <span id="total">0.00</span> </h3>
+        </nav>
+    </header>
+
+    <section class="produto" data-preco="15">
+    <div>
+        <h3>Hamburgue1</h3>
+        <p>R$ 15,00</p>
+        <div>
+         <button onclick="alterarqtd(this, -1)">-</button>
+         <span>0</span>
+         <button onclick="alterarqtd(this, 1)">+</button>
+        </div>
+    </div>
+    </section>
+
+    <section class="produto" data-preco="19">
+    <div>
+        <h3>Hamburgue1</h3>
+        <p>R$ 19,00</p>
+        <div>
+         <button onclick="alterarqtd(this, -1)">-</button>
+         <span>0</span>
+         <button onclick="alterarqtd(this, 1)">+</button>
+        </div>
+    </div>
+    </section>
+
+    <section class="produto" data-preco="26">
+    <div>
+        <h3>Hamburgue1</h3>
+        <p>R$ 26,00</p>
+        <div>
+         <button onclick="alterarqtd(this, -1)">-</button>
+         <span>0</span>
+         <button onclick="alterarqtd(this, 1)">+</button>
+        </div>
+    </div>
+    </section>
+
+    <footer> 
+        <div>test</div> 
+    </footer>
+
+<script src="script.js"></script>    
+</body>
+</html>
