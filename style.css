@@ -1,4 +1,7 @@
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: #0f0f0f;
@@ -53,9 +56,9 @@ nav h3 {
 .produto {
     background-color: #1a1a1a;
     border: 1px solid orange;
-    margin: 20px;
-    padding: 15px;
+    width: 250px;
     border-radius: 10px;
+    padding: 20px;
     transition: 0.3s;
 }
 
@@ -64,8 +67,19 @@ nav h3 {
     box-shadow: 0 0 10px orange;
 }
 
-.produto h3::before {
-    content: "🍔 ";
+.img-produto{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+.produtos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
 
 .produto p {
@@ -99,5 +113,5 @@ footer {
     text-align: center;
     padding: 15px;
     border-top: 2px solid orange;
-    margin-top: 30px;
+    margin-top: auto;
 }

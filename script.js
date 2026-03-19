@@ -20,3 +20,10 @@ function atualizarTotal() {
     document.getElementById("total").innerText = total.toFixed(2);
     localStorage.setItem("total", total);
 }
+
+window.onload = function(){
+    let totalsalvo = this.localStorage.getItem("total");
+    if (totalsalvo){
+        document.getElementById("total").innerText = parseFloat(totalsalvo).toFixed(2);
+    }
+}
