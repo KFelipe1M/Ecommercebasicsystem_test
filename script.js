@@ -1,3 +1,4 @@
+//cálculo do totoal
 function alterarqtd(botao, valor){
     const span = botao.parentElement.querySelector("span");
     let quantidade = parseInt(span.innerText);
@@ -7,6 +8,7 @@ function alterarqtd(botao, valor){
     atualizarTotal();
 }
 
+//Mostrar total
 function atualizarTotal() {
     let produtos = document.querySelectorAll(".produto");
     let total = 0;
@@ -16,4 +18,5 @@ function atualizarTotal() {
         total += preco * qtd;
     });
     document.getElementById("total").innerText = total.toFixed(2);
+    localStorage.setItem("total", total);
 }
